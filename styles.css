@@ -60,3 +60,76 @@ h1 {
 .button:hover {
   background: #93472c;
 }
+
+.work {
+  padding: 100px 24px;
+  background: #ffffff;
+}
+
+.work-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.work h2 {
+  max-width: 760px;
+  margin: 0 0 50px;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+
+.work-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.work-card {
+  padding: 28px;
+  border: 1px solid #d8d1c7;
+  border-radius: 12px;
+  background: #f3f0ea;
+}
+
+.work-number {
+  margin: 0 0 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b85c38;
+}
+
+.work-type {
+  margin: 0 0 10px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #7a7169;
+}
+
+.work-card h3 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+
+.work-card p {
+  line-height: 1.7;
+}
+
+.work-card ul {
+  margin: 24px 0 0;
+  padding-left: 18px;
+}
+
+.work-card li {
+  margin-bottom: 8px;
+  color: #625b54;
+}
+
+@media (max-width: 800px) {
+  .work-grid {
+    grid-template-columns: 1fr;
+  }
+}

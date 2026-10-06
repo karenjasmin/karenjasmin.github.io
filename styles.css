@@ -351,3 +351,19 @@ h1 {
   font-weight: 700;
   color: #b85c38;
 }
+
+.skills-grid {
+  display: grid;
+  gap: 36px;
+}
+
+.skills-group h3 {
+  margin: 0 0 16px;
+  font-size: 18px;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}

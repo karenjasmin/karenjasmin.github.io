@@ -229,10 +229,9 @@ h1 {
 
 .skills-list span {
   padding: 10px 16px;
-  border: 5px solid #b85c38;
   border-radius: 999px;
-  background: #ffffff;
-  color: #26231f;
+  background: #b85c38;
+  color: #ffffff;
   font-size: 14px;
   font-weight: 700;
 }
@@ -376,7 +375,7 @@ h1 {
 
 .skills-group {
   padding: 28px;
-  border: 2px solid #b85c38;
+  border: 1px solid #d8d1c7;
   border-radius: 14px;
   background: #f3f0ea;
 }

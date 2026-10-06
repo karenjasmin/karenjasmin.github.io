@@ -231,7 +231,7 @@ h1 {
   padding: 10px 16px;
   border-radius: 999px;
   background: #b85c38;
-  color: #ffffff;
+  color: #f3f0ea;
   font-size: 14px;
   font-weight: 700;
 }
@@ -375,7 +375,7 @@ h1 {
 
 .skills-group {
   padding: 28px;
-  border: 1px solid #d8d1c7;
+  border: 1px solid #b85c38;
   border-radius: 14px;
   background: #f3f0ea;
 }

@@ -16,6 +16,21 @@ body {
   padding: 80px 24px;
 }
 
+.hero-content {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-text {
+  max-width: 700px;
+  margin: 32px auto;
+  font-size: 19px;
+  line-height: 1.7;
+  color: #625b54;
+}
+
 .eyebrow {
   margin-bottom: 20px;
   font-size: 14px;
@@ -326,10 +341,4 @@ h1 {
 
 .footer-links a:hover {
   color: #ffffff;
-}
-
-@media (max-width: 800px) {
-  .hero-content {
-    grid-template-columns: 1fr;
-  }
 }

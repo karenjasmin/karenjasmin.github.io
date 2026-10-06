@@ -367,3 +367,28 @@ h1 {
   flex-wrap: wrap;
   gap: 12px;
 }
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skills-group {
+  padding: 28px;
+  border: 1px solid #d8d1c7;
+  border-radius: 14px;
+  background: #f3f0ea;
+}
+
+.skills-group h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #26231f;
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}

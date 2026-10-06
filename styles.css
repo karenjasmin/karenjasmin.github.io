@@ -342,3 +342,12 @@ h1 {
 .footer-links a:hover {
   color: #ffffff;
 }
+
+.work-result {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #d8d1c7;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b85c38;
+}

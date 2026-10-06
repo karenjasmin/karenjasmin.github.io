@@ -129,6 +129,15 @@ h1 {
   color: #625b54;
 }
 
+.work-result {
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid #d8d1c7;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b85c38;
+}
+
 @media (max-width: 800px) {
   .work-grid {
     grid-template-columns: 1fr;
@@ -144,7 +153,6 @@ h1 {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-
   display: grid;
   grid-template-columns: 1fr 1.2fr;
   gap: 60px;
@@ -178,19 +186,11 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-
   border: 1px solid #d8d1c7;
   border-radius: 14px;
   background: #ffffff;
-
   color: #7a7169;
   font-weight: 700;
-}
-
-@media (max-width: 800px) {
-  .featured-inner {
-    grid-template-columns: 1fr;
-  }
 }
 
 .project-image {
@@ -200,6 +200,12 @@ h1 {
   object-fit: cover;
   border: 1px solid #d8d1c7;
   border-radius: 14px;
+}
+
+@media (max-width: 800px) {
+  .featured-inner {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills {
@@ -221,6 +227,25 @@ h1 {
   letter-spacing: -0.03em;
 }
 
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.skills-group {
+  padding: 28px;
+  border: 2px solid #b85c38;
+  border-radius: 14px;
+  background: #f3f0ea;
+}
+
+.skills-group h3 {
+  margin: 0 0 20px;
+  font-size: 20px;
+  color: #26231f;
+}
+
 .skills-list {
   display: flex;
   flex-wrap: wrap;
@@ -234,6 +259,12 @@ h1 {
   color: #f3f0ea;
   font-size: 14px;
   font-weight: 700;
+}
+
+@media (max-width: 800px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .about {
@@ -317,7 +348,6 @@ h1 {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto;
-
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -340,54 +370,4 @@ h1 {
 
 .footer-links a:hover {
   color: #ffffff;
-}
-
-.work-result {
-  margin-top: 24px;
-  padding-top: 18px;
-  border-top: 1px solid #d8d1c7;
-  font-size: 14px;
-  font-weight: 700;
-  color: #b85c38;
-}
-
-.skills-grid {
-  display: grid;
-  gap: 36px;
-}
-
-.skills-group h3 {
-  margin: 0 0 16px;
-  font-size: 18px;
-}
-
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
-}
-
-.skills-group {
-  padding: 28px;
-  border: 2px solid #b85c38;
-  border-radius: 14px;
-  background: #f3f0ea;
-}
-
-.skills-group h3 {
-  margin: 0 0 20px;
-  font-size: 20px;
-  color: #26231f;
-}
-
-@media (max-width: 800px) {
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
 }

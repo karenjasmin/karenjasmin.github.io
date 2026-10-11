@@ -371,3 +371,60 @@ h1 {
 .footer-links a:hover {
   color: #ffffff;
 }
+
+
+/* Website building portfolio */
+.website-projects {
+  padding: 100px 24px;
+  background: #fff;
+}
+.website-projects h2 {
+  max-width: 760px;
+  margin: 0 0 24px;
+  font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.05;
+  letter-spacing: -0.03em;
+}
+.section-intro {
+  max-width: 760px;
+  margin: 0 0 36px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #625b54;
+}
+.website-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.website-project-card {
+  padding: 30px;
+  border: 2px solid #b85c38;
+  border-radius: 12px;
+  background: #f3f0ea;
+}
+.website-project-card h3 {
+  margin: 0 0 16px;
+  font-size: 26px;
+}
+.website-project-card p {
+  line-height: 1.7;
+  color: #625b54;
+}
+.website-project-card .project-role {
+  margin-top: 22px;
+}
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  font-weight: 700;
+  color: #93472c;
+  text-underline-offset: 4px;
+}
+.project-link:hover, .project-link:focus-visible {
+  color: #26231f;
+}
+@media (max-width: 800px) {
+  .website-project-grid { grid-template-columns: 1fr; }
+  .website-projects { padding: 72px 24px; }
+}

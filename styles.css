@@ -428,3 +428,42 @@ h1 {
   .website-project-grid { grid-template-columns: 1fr; }
   .website-projects { padding: 72px 24px; }
 }
+
+
+/* Figma-inspired desktop redesign: navigation and hero */
+:root { --copper: #b87333; --charcoal: #222222; --cream: #f3f0ea; }
+html { scroll-behavior: smooth; }
+body { color: var(--charcoal); }
+.site-nav { background: var(--cream); border-bottom: 1px solid rgba(34,34,34,.1); }
+.nav-inner { max-width: 1200px; margin: auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.site-logo { font-size: 23px; font-weight: 800; letter-spacing: -.04em; color: var(--charcoal); text-decoration: none; }
+.site-logo span { color: var(--copper); }
+.nav-links { display: flex; align-items: center; gap: 32px; }
+.nav-links a { color: var(--charcoal); text-decoration: none; font-size: 15px; font-weight: 600; }
+.nav-links a:hover, .nav-links a:focus-visible { color: var(--copper); }
+.nav-links .nav-contact { background: var(--copper); color: white; padding: 12px 20px; border-radius: 7px; }
+.nav-links .nav-contact:hover, .nav-links .nav-contact:focus-visible { background: #955921; color: white; }
+.hero { min-height: 680px; padding: 88px 24px 110px; background: var(--cream); }
+.hero-content { display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); align-items: center; gap: 70px; text-align: left; }
+.hero-left { min-width: 0; }
+.hero h1 { margin: 0; max-width: 660px; font-size: clamp(42px,4.4vw,64px); line-height: 1.08; }
+.hero-text { max-width: 620px; margin: 26px 0 30px; font-size: 18px; }
+.hero .eyebrow { color: var(--copper); }
+.hero .button { background: var(--copper); }
+.hero .button:hover { background: #955921; }
+.hero-visual { min-width: 0; }
+.browser-window { overflow: hidden; border: 1px solid #d9cfc2; border-radius: 13px; background: white; box-shadow: 20px 24px 0 rgba(184,115,51,.13), 0 18px 45px rgba(34,34,34,.1); transform: rotate(1deg); }
+.browser-toolbar { display: flex; align-items: center; gap: 6px; padding: 13px 15px; background: #eae5de; border-bottom: 1px solid #d9cfc2; }
+.browser-toolbar > span { width: 9px; height: 9px; border-radius: 50%; background: #c7bcb0; }
+.browser-address { margin: auto; padding: 5px 24px; border-radius: 5px; background: white; color: #7d756e; font-size: 11px; }
+.browser-preview { padding: 36px 32px; }
+.preview-label { color: var(--copper); font-size: 11px; font-weight: 800; letter-spacing: .12em; }
+.preview-heading { height: 22px; width: 85%; margin: 16px 0 8px; background: var(--charcoal); border-radius: 3px; }
+.preview-heading.short { width: 61%; margin-top: 0; }
+.preview-line { height: 8px; margin: 12px 0; background: #ddd6ce; border-radius: 3px; }
+.preview-line.medium { width: 72%; }
+.preview-button { width: 115px; height: 32px; margin: 22px 0 28px; background: var(--copper); border-radius: 5px; }
+.preview-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.preview-cards div { height: 90px; border: 1px solid #dfd5c9; border-radius: 8px; background: #f7f4ef; }
+@media (max-width: 800px) { .nav-inner { flex-wrap: wrap; } .nav-links { flex-wrap: wrap; gap: 12px 20px; } .hero { min-height: auto; padding: 70px 24px; } .hero-content { grid-template-columns: 1fr; gap: 48px; } .browser-window { transform: none; } }
+@media (max-width: 420px) { .nav-inner { padding: 18px 16px; } .nav-links { gap: 10px 16px; } .nav-links a { font-size: 13px; } .nav-links .nav-contact { padding: 9px 13px; } .hero { padding: 56px 16px 72px; } .hero h1 { font-size: 40px; } .hero-text { font-size: 16px; } .browser-preview { padding: 24px 20px; } }
